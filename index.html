@@ -1,0 +1,3183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Breezy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="breezy-phase1.css">
+    <link rel="stylesheet" href="breezy-phase2.css">
+    <link rel="stylesheet" href="breezy-phase3.css">
+    <link rel="stylesheet" href="breezy-phase4.css">
+    <link rel="stylesheet" href="breezy-branding-pass.css">
+    <link rel="stylesheet" href="breezy-phase5.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ========================================
+     ONBOARDING
+========================================= -->
+
+<div id="onboarding" class="onboarding">
+
+
+    <!-- STEP 1: WELCOME -->
+
+    <div
+        id="onboardingWelcome"
+        class="onboarding-step active-onboarding-step">
+
+        <div class="onboarding-hero-icon">
+            🌿
+        </div>
+
+        <h1>
+            Welcome to Breezy
+        </h1>
+
+        <p>
+            Take control of your vaping habits,
+            track your progress, and get support
+            along the way.
+        </p>
+
+        <div class="onboarding-features">
+
+            <div>
+                📊 Track your habits
+            </div>
+
+            <div>
+                🤝 Get peer support
+            </div>
+
+            <div>
+                🎯 Build healthier goals
+            </div>
+
+            <div>
+                🎁 Earn rewards
+            </div>
+
+        </div>
+
+        <button
+            class="primary-button onboarding-next"
+            data-next="onboardingProfile">
+
+            Get Started
+
+        </button>
+
+    </div>
+
+
+    <!-- STEP 2: PROFILE -->
+
+    <div
+        id="onboardingProfile"
+        class="onboarding-step">
+
+        <div class="onboarding-progress">
+            Step 1 of 6
+        </div>
+
+        <h1>
+            Let's get to know you
+        </h1>
+
+        <p class="onboarding-subtitle">
+            We'll use this information to personalize
+            your experience.
+        </p>
+
+
+        <label class="onboarding-label">
+            First Name
+        </label>
+
+        <input
+            id="onboardingName"
+            class="onboarding-input"
+            type="text"
+            placeholder="Enter your first name">
+
+
+        <label class="onboarding-label">
+            Date of Birth
+        </label>
+
+        <input
+            id="onboardingBirthdate"
+            class="onboarding-input"
+            type="date">
+
+
+        <button
+            id="profileContinueButton"
+            class="primary-button">
+
+            Continue
+
+        </button>
+
+    </div>
+
+
+    <!-- STEP 3: AGE + ID VERIFICATION -->
+
+    <div
+        id="onboardingVerification"
+        class="onboarding-step">
+
+        <div class="onboarding-progress">
+            Step 2 of 6
+        </div>
+
+
+        <div class="verification-icon">
+            🪪
+        </div>
+
+
+        <h1>
+            Age Verification
+        </h1>
+
+
+        <p class="onboarding-subtitle">
+
+            This app is intended for adult users.
+            You must be at least 18 years old to
+            continue with this prototype.
+
+        </p>
+
+
+        <div class="verification-notice">
+
+            <strong>
+                Why do we verify age?
+            </strong>
+
+            <p>
+                Age verification helps ensure that
+                access to this vaping-related
+                cessation and harm-reduction platform
+                is limited to eligible adult users.
+            </p>
+
+        </div>
+
+
+        <label class="onboarding-label">
+
+            Upload a Valid Government-Issued ID
+
+        </label>
+
+
+        <div class="id-upload-area">
+
+            <div class="upload-icon">
+                📄
+            </div>
+
+            <strong>
+                Submit Valid ID
+            </strong>
+
+            <p>
+                Driver's License, Passport,
+                National ID, or other accepted ID
+            </p>
+
+
+            <input
+                id="validIdUpload"
+                type="file"
+                accept="image/*,.pdf">
+
+
+            <label
+                for="validIdUpload"
+                class="upload-button">
+
+                Choose File
+
+            </label>
+
+
+            <p
+                id="uploadedFileName"
+                class="uploaded-file-name">
+
+                No file selected
+
+            </p>
+
+        </div>
+
+
+        <label class="consent-checkbox">
+
+            <input
+                id="ageConfirmation"
+                type="checkbox">
+
+            <span>
+
+                I confirm that I am at least
+                18 years old and that the
+                information I provided is accurate.
+
+            </span>
+
+        </label>
+
+
+        <button
+            id="verificationContinueButton"
+            class="primary-button">
+
+            Verify & Continue
+
+        </button>
+
+    </div>
+
+
+    <!-- STEP 4: DATA PRIVACY -->
+
+    <div
+        id="onboardingPrivacy"
+        class="onboarding-step">
+
+        <div class="onboarding-progress">
+            Step 3 of 6
+        </div>
+
+
+        <div class="verification-icon">
+            🔒
+        </div>
+
+
+        <h1>
+            Your Privacy Matters
+        </h1>
+
+
+        <p class="onboarding-subtitle">
+
+            Before continuing, please review how
+            your information may be used.
+
+        </p>
+
+
+        <div class="privacy-summary">
+
+
+            <div class="privacy-item">
+
+                <span>
+                    📊
+                </span>
+
+                <div>
+
+                    <strong>
+                        Usage Data
+                    </strong>
+
+                    <p>
+                        Your vaping logs and progress
+                        information are used to provide
+                        personalized tracking and insights.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="privacy-item">
+
+                <span>
+                    🪪
+                </span>
+
+                <div>
+
+                    <strong>
+                        Identity Verification
+                    </strong>
+
+                    <p>
+                        Valid ID information should only
+                        be used for age and identity
+                        verification purposes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="privacy-item">
+
+                <span>
+                    🤝
+                </span>
+
+                <div>
+
+                    <strong>
+                        Peer Features
+                    </strong>
+
+                    <p>
+                        Only information you choose to
+                        share should be visible to your
+                        accountability partner or
+                        support circle.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="privacy-item">
+
+                <span>
+                    🛡️
+                </span>
+
+                <div>
+
+                    <strong>
+                        Data Protection
+                    </strong>
+
+                    <p>
+                        A production version should use
+                        appropriate safeguards to protect
+                        personal and sensitive information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <button
+            id="viewPrivacyButton"
+            class="privacy-link-button">
+
+            View Full Privacy Notice
+
+        </button>
+
+
+        <label class="consent-checkbox">
+
+            <input
+                id="privacyConsent"
+                type="checkbox">
+
+            <span>
+
+                I have read and agree to the
+                Privacy Notice and consent to
+                the processing of my information
+                as described.
+
+            </span>
+
+        </label>
+
+
+        <label class="consent-checkbox">
+
+            <input
+                id="termsConsent"
+                type="checkbox">
+
+            <span>
+
+                I agree to the Terms of Use.
+
+            </span>
+
+        </label>
+
+
+        <button
+            id="privacyContinueButton"
+            class="primary-button">
+
+            Agree & Continue
+
+        </button>
+
+    </div>
+
+
+    <!-- STEP 5: GOAL -->
+
+    <div
+        id="onboardingGoal"
+        class="onboarding-step">
+
+        <div class="onboarding-progress">
+            Step 4 of 6
+        </div>
+
+
+        <h1>
+            What's your goal?
+        </h1>
+
+
+        <p class="onboarding-subtitle">
+
+            There's no single right way to start.
+            Choose the goal that works best for you.
+
+        </p>
+
+
+        <div class="onboarding-choice-list">
+
+
+            <label class="onboarding-choice">
+
+                <input
+                    type="radio"
+                    name="onboardingGoal"
+                    value="reduce"
+                    checked>
+
+                <div>
+
+                    <span class="choice-icon">
+                        📉
+                    </span>
+
+                    <strong>
+                        Reduce Gradually
+                    </strong>
+
+                    <p>
+                        Lower your vaping frequency
+                        step by step.
+                    </p>
+
+                </div>
+
+            </label>
+
+
+
+            <label class="onboarding-choice">
+
+                <input
+                    type="radio"
+                    name="onboardingGoal"
+                    value="quit">
+
+                <div>
+
+                    <span class="choice-icon">
+                        🌱
+                    </span>
+
+                    <strong>
+                        Quit Completely
+                    </strong>
+
+                    <p>
+                        Work toward becoming
+                        completely vape-free.
+                    </p>
+
+                </div>
+
+            </label>
+
+
+        </div>
+
+
+        <button
+            class="primary-button onboarding-next"
+            data-next="onboardingLimits">
+
+            Continue
+
+        </button>
+
+    </div>
+
+
+    <!-- STEP 6: BASELINE HABITS -->
+
+    <div
+        id="onboardingLimits"
+        class="onboarding-step">
+
+        <div class="onboarding-progress">
+            Step 5 of 6
+        </div>
+
+        <h1>
+            Tell us about your current vaping
+        </h1>
+
+        <p class="onboarding-subtitle">
+            Breezy uses your usual vaping habits
+            to create a realistic starting reduction target.
+        </p>
+
+        <div class="onboarding-setting">
+
+            <div>
+
+                <strong>
+                    Sessions per day
+                </strong>
+
+                <p>
+                    About how many times do you
+                    usually vape in a day?
+                </p>
+
+            </div>
+
+            <input
+                id="onboardingBaselineSessions"
+                type="number"
+                min="1"
+                max="50"
+                value="10">
+
+        </div>
+
+        <div class="onboarding-setting">
+
+            <div>
+
+                <strong>
+                    Puffs per session
+                </strong>
+
+                <p>
+                    About how many puffs do you
+                    usually take each time?
+                </p>
+
+            </div>
+
+            <input
+                id="onboardingBaselinePuffs"
+                type="number"
+                min="1"
+                max="100"
+                value="8">
+
+        </div>
+
+        <div
+            class="onboarding-setting"
+            style="margin-top: 16px;">
+
+            <div>
+
+                <strong>
+                    Estimated daily baseline
+                </strong>
+
+                <p>
+                    Based on the habits you entered
+                </p>
+
+            </div>
+
+            <strong id="onboardingBaselineTotal">
+                80 puffs/day
+            </strong>
+
+        </div>
+
+        <div
+            class="onboarding-setting"
+            style="margin-top: 12px;">
+
+            <div>
+
+                <strong>
+                    Your starting Breezy target
+                </strong>
+
+                <p>
+                    We'll begin with a manageable
+                    10% reduction.
+                </p>
+
+            </div>
+
+            <strong id="onboardingStartingTarget">
+                72 puffs/day
+            </strong>
+
+        </div>
+
+        <button
+            class="primary-button onboarding-next"
+            data-next="onboardingPlan">
+
+            Continue
+
+        </button>
+
+    </div>
+
+
+    <!-- STEP 7: PLAN -->
+
+    <div
+        id="onboardingPlan"
+        class="onboarding-step">
+
+        <div class="onboarding-progress">
+            Step 6 of 6
+        </div>
+
+
+        <h1>
+            Choose your experience
+        </h1>
+
+
+        <p class="onboarding-subtitle">
+
+            Start for free or explore additional
+            tools with Breezy PRO.
+
+        </p>
+
+
+        <div class="plan-options">
+
+
+            <div class="plan-card selected-plan">
+
+                <div class="plan-header">
+
+                    <h2>
+                        FREE
+                    </h2>
+
+                    <span>
+                        ₱0
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Essential tools to start
+                    your journey.
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        ✓ Home dashboard
+                    </li>
+
+                    <li>
+                        ✓ Daily usage tracking
+                    </li>
+
+                    <li>
+                        ✓ Daily, weekly & monthly progress reports
+                    </li>
+
+                    <li>
+                        ✓ Reduction challenges & recovery days
+                    </li>
+
+                    <li>
+                        ✓ Healthy habits & cessation journal
+                    </li>
+
+                    <li>
+                        ✓ Learn & reflections
+                    </li>
+
+                    <li>
+                        ✓ Peer accountability & group challenges
+                    </li>
+
+                    <li>
+                        ✓ Craving support
+                    </li>
+
+                    <li>
+                        ✓ Virtual rewards
+                    </li>
+
+                </ul>
+
+
+                <button
+                    id="chooseFreeButton"
+                    class="secondary-button">
+
+                    Continue with Free
+
+                </button>
+
+            </div>
+
+
+
+            <div class="plan-card pro-plan">
+
+                <div class="pro-label">
+                    PRO
+                </div>
+
+
+                <div class="plan-header">
+
+                    <h2>
+                        Breezy PRO
+                    </h2>
+
+                    <span>
+                        Included with Breezy Cap
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Unlock the complete
+                    Breezy experience.
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        ✓ Everything in Free
+                    </li>
+
+                    <li>
+                        ✨ AI-powered insights
+                    </li>
+
+                    <li>
+                        ✨ Breezy Cap integration
+                    </li>
+
+                    <li>
+                        ✨ 2× BreezyPoints
+                    </li>
+
+                    <li>
+                        ✨ Real-world rewards
+                    </li>
+
+                    <li>
+                        ✨ Premium customization
+                    </li>
+
+                </ul>
+
+
+                <button
+                    id="exploreProButton"
+                    class="pro-button">
+
+                    Learn About Breezy Cap
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+<main>
+
+<!-- ========================================
+     HOME PAGE
+========================================= -->
+
+<div id="homePage" class="page active-page ux2-home">
+
+    <header class="header ux2-home-header">
+        <div>
+            <div class="breezy-brand breezy-brand-image" id="developerLogoTrigger" role="button" tabindex="0" aria-label="Breezy logo">
+                <img src="breezy-logo.png" alt="Breezy" class="breezy-header-logo">
+            </div>
+            <p class="greeting">Good morning, <span id="homeUserName">Alex</span></p>
+            <h1>Ready for another breezy day?</h1>
+        </div>
+        <div class="ux31-header-actions">
+            <button type="button" class="ux31-notification-button" data-open-notifications aria-label="Open notifications">
+                <span aria-hidden="true" class="ux35-bell">⌁</span><span class="ux31-notification-dot hidden" data-notification-dot></span>
+            </button>
+            <div class="profile-avatar" id="headerAvatar" role="button" tabindex="0" aria-label="Open profile">A</div>
+        </div>
+    </header>
+
+    <!-- PRIMARY: TODAY -->
+    <section class="section ux2-today-section">
+        <div class="section-header ux2-section-header">
+            <div>
+                <span class="eyebrow">TODAY</span>
+                <h2>Your progress</h2>
+            </div>
+            <span id="usageStatus">On Track</span>
+        </div>
+
+        <div class="usage-card ux2-usage-card">
+            <div class="ux2-primary-usage">
+                <div>
+                    <span id="puffCount" class="ux2-puff-count">48</span>
+                    <span class="usage-limit"> / <span id="puffLimit">80</span></span>
+                    <p>Puffs today</p>
+                </div>
+                <div class="ux2-session-summary">
+                    <strong><span id="sessionCount">6</span> / <span id="sessionLimit">10</span></strong>
+                    <span>sessions</span>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-label">
+                    <span>Daily Reduction Target</span>
+                    <span id="sessionPercentage">60%</span>
+                </div>
+                <div class="progress-bar"><div id="sessionProgress" class="progress-fill"></div></div>
+            </div>
+
+            <button id="logButton" class="primary-button ux2-log-button">+ Log Vape Session</button>
+        </div>
+    </section>
+
+    <!-- EXCEPTION STATE: ONLY SHOWN WHEN ACTIVE -->
+    <section id="recoveryDayCard" class="section recovery-day-card hidden">
+        <div class="card recovery-day-inner">
+            <div>
+                <span class="eyebrow">RECOVERY DAY</span>
+                <h2>One day does not erase your progress.</h2>
+                <p id="recoveryDayStatus">Stay within today's target to preserve your streak.</p>
+            </div>
+            <div class="recovery-day-badge">↻ Recovery</div>
+        </div>
+    </section>
+
+    <!-- SECONDARY: CHALLENGE + STREAK -->
+    <section class="section">
+        <button type="button" class="card challenge-stage-card ux2-challenge-card ux35-sheet-trigger" data-sheet="challenge" aria-label="Open challenge details">
+            <div class="challenge-stage-header">
+                <div>
+                    <span class="eyebrow">CURRENT CHALLENGE</span>
+                    <h2 id="challengeStageTitle">3-Day Challenge</h2>
+                </div>
+                <div id="challengeReductionBadge" class="challenge-reduction-badge">10% reduction</div>
+            </div>
+
+            <div class="ux2-challenge-meta">
+                <div><strong><span id="streak">3</span> days</strong><span>Current streak</span></div>
+                <div><strong id="challengeDailyTarget">72</strong><span>puffs/day target</span></div>
+                <div><strong id="challengePercentLabel">0%</strong><span id="challengeDayLabel">Day 0 of 3</span></div>
+            </div>
+
+            <div class="challenge-progress-track"><div id="challengeProgressFill" class="challenge-progress-fill"></div></div>
+            <span id="challengeBaseline" class="ux2-hidden-data">80</span>
+        </button>
+    </section>
+
+    <!-- CONTEXTUAL NEXT STEP -->
+    <section class="section ux2-next-step">
+        <div class="ux2-next-copy">
+            <span class="eyebrow">NEXT STEP</span>
+            <h2>Keep today simple.</h2>
+            <p>Log when you vape, or get support when a craving feels difficult.</p>
+        </div>
+        <button type="button" class="small-button ux2-support-action" data-page-target="peersPage">Get Support</button>
+    </section>
+
+    <!-- SMALL DESTINATION SHORTCUTS -->
+    <section class="section ux2-shortcuts-section">
+        <div class="ux2-shortcuts">
+            
+            
+        </div>
+    </section>
+
+</div>
+
+
+
+<!-- ========================================
+     PROGRESS PAGE
+========================================= -->
+
+<div id="progressPage" class="page">
+
+    <header class="page-header">
+
+        <p class="greeting">
+            Your journey
+        </p>
+
+        <h1>
+            Progress & Insights 📊
+        </h1>
+
+        <p class="subtitle">
+            Small changes add up over time.
+        </p>
+
+    </header>
+
+
+    <!-- WEEKLY STATS -->
+     <div
+    id="proProgressLock"
+    class="pro-feature-lock hidden">
+
+    <div class="pro-lock-icon">
+        🔒
+    </div>
+
+    <h2>
+        Progress & Insights
+    </h2>
+
+    <p>
+        Daily, weekly, and monthly reduction reports are included with Breezy Free. Breezy PRO adds premium AI-powered coaching and predictive tools.
+    </p>
+
+    <button
+        id="progressUpgradeButton"
+        class="pro-button">
+
+        Learn About Breezy Cap
+
+    </button>
+
+</div>
+
+
+<div id="advancedProgressContent">
+
+    <!-- REPORT PERIOD SELECTOR -->
+    <section class="section">
+        <div class="report-period-selector">
+            <button class="report-period-button" data-period="1">Daily</button>
+            <button class="report-period-button active-period" data-period="7">Weekly</button>
+            <button class="report-period-button" data-period="30">Monthly</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <h2 id="reportPeriodTitle">This Week</h2>
+            <span id="reportComparisonLabel">vs. Last Week</span>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card"><span class="stat-icon">📊</span><h3 id="reportSessions">0</h3><p>Total Sessions</p><span id="sessionChange" class="stat-change neutral-change">No previous data</span></div>
+            <div class="stat-card"><span class="stat-icon">💨</span><h3 id="reportPuffs">0</h3><p>Total Puffs</p><span id="puffChange" class="stat-change neutral-change">No previous data</span></div>
+            <div class="stat-card"><span class="stat-icon">🧠</span><h3 id="reportCraving">0</h3><p>Avg. Craving</p><span class="stat-subtext">Out of 10</span></div>
+            <div class="stat-card"><span class="stat-icon">📅</span><h3 id="reportDailyAverage">0</h3><p>Avg. Sessions / Day</p></div>
+        </div>
+    </section>
+
+
+    <!-- WEEKLY CHART -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2 id="usageChartTitle">Weekly Usage</h2>
+
+
+            <select
+                id="usageMetric"
+                class="metric-select">
+
+                <option value="sessions">
+                    Sessions
+                </option>
+
+                <option value="puffs">
+                    Puffs
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div id="dynamicUsageChart" class="bar-chart"></div>
+
+
+            <div class="chart-summary">
+
+                <p>
+                    Weekly Average
+                </p>
+
+                <h3 id="weeklyAverage">
+                    7 sessions/day
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRIGGERS -->
+
+    <section class="section">
+
+        <h2>
+            Your Top Triggers
+        </h2>
+
+
+        <div id="dynamicTriggerList" class="trigger-card">
+            <p class="empty-report-message">Log more sessions to discover your most common triggers.</p>
+        </div>
+
+    </section>
+
+
+    <!-- INSIGHT -->
+
+    
+
+
+
+<section class="ux3-pro-tools">
+    <div class="ux3-pro-tools-header">
+        <div><h2>Advanced Coaching</h2><p>AI-powered guidance and predictive tools in one place.</p></div>
+        <span class="pro-badge">PRO</span>
+    </div>
+<section class="progress-section risk-monitor-section" id="riskMonitorProgressSection">
+    <div class="section-title-row">
+        <h2>Risk Prediction ⚠️</h2>
+        
+    </div>
+    <div class="risk-monitor-card" id="riskMonitorProgressCard">
+        <span class="risk-monitor-label">LAST CHECK</span>
+        <h3 id="riskMonitorProgressTitle">Analyzing your latest sessions…</h3>
+        <p id="riskMonitorProgressText">Risk predictions update after each new log.</p>
+        <div class="risk-monitor-actions">
+            <button type="button" class="ai-coach-primary" id="riskMonitorProgressOpen">Open SOS</button>
+            <button type="button" class="ai-coach-secondary" id="riskMonitorProgressView">View AI Coach</button>
+        </div>
+    </div>
+</section>
+
+<section class="progress-section smart-goal-section" id="smartGoalSection">
+  <div class="section-title-row"><h2>Smart Goal 🎯</h2></div>
+  <div class="smart-goal-card">
+    <span class="smart-goal-label">AI RECOMMENDATION</span>
+    <h3 id="smartGoalTitle">Analyzing your daily average…</h3>
+    <p id="smartGoalText">Your Coach will recommend a realistic next step when enough data is available.</p>
+    <div id="smartGoalActions" class="smart-goal-actions hidden">
+      <button id="acceptSmartGoal" class="ai-coach-primary">Accept Goal</button>
+      <button id="dismissSmartGoal" class="ai-coach-secondary">Not Now</button>
+    </div>
+  </div>
+</section>
+
+<section class="progress-section recovery-score-section" id="progressRecoveryScoreSection">
+    <div class="section-title-row">
+        <h2>Recovery Score ❤️</h2>
+        
+    </div>
+    <div class="recovery-score-card recovery-score-card-detailed">
+        <div class="recovery-score-top">
+            <div class="recovery-score-ring" id="progressRecoveryRing">
+                <div class="recovery-score-ring-inner">
+                    <strong id="progressRecoveryScore">—</strong>
+                    <span>/ 100</span>
+                </div>
+            </div>
+            <div class="recovery-score-content">
+                <span class="recovery-score-label">OVERALL</span>
+                <h3 id="progressRecoveryRating">Building your baseline</h3>
+                <p id="progressRecoveryMessage">Your score updates as your habits improve.</p>
+            </div>
+        </div>
+        <div class="recovery-breakdown">
+            <div class="recovery-factor">
+                <div><span>Goal Adherence</span><b id="recoveryGoalScore">—</b></div>
+                <div class="factor-track"><div id="recoveryGoalBar"></div></div>
+            </div>
+            <div class="recovery-factor">
+                <div><span>Usage Reduction</span><b id="recoveryReductionScore">—</b></div>
+                <div class="factor-track"><div id="recoveryReductionBar"></div></div>
+            </div>
+            <div class="recovery-factor">
+                <div><span>Craving Control</span><b id="recoveryCravingScore">—</b></div>
+                <div class="factor-track"><div id="recoveryCravingBar"></div></div>
+            </div>
+            <div class="recovery-factor">
+                <div><span>Consistency</span><b id="recoveryConsistencyScore">—</b></div>
+                <div class="factor-track"><div id="recoveryConsistencyBar"></div></div>
+            </div>
+            <div class="recovery-factor">
+                <div><span>Engagement</span><b id="recoveryEngagementScore">—</b></div>
+                <div class="factor-track"><div id="recoveryEngagementBar"></div></div>
+            </div>
+        </div>
+        <p class="recovery-score-note">Score weights: 30% goal adherence, 25% usage reduction, 20% craving control, 15% consistency, and 10% engagement.</p>
+    </div>
+</section>
+
+<section class="progress-section ai-coach-section" id="progressAICoachSection">
+    <div class="section-title-row">
+        <h2>AI Coach 🤖</h2>
+        
+    </div>
+    <div class="ai-coach-card" id="progressAICoachCard">
+        <div class="ai-coach-icon">🧠</div>
+        <div class="ai-coach-body">
+            <span class="ai-coach-label">PERSONALIZED COACHING</span>
+            <h3 id="progressAICoachTitle">Analyzing your recent patterns…</h3>
+            <p id="progressAICoachText">Log sessions to receive personalized recommendations.</p>
+            <div class="ai-coach-actions">
+                <button type="button" class="ai-coach-primary" id="progressCoachPrimary">View Today</button>
+                <button type="button" class="ai-coach-secondary hidden" id="progressCoachSecondary">Open SOS</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+
+</div>
+
+
+</div>
+
+<!-- ========================================
+     LEARN PAGE — SUB-PHASE 7
+========================================= -->
+<div id="learnPage" class="page">
+  <header class="page-header learn-header">
+    <div><p class="greeting">LEARN WITH BREEZY</p><h1>Learn</h1><p class="subtitle">Short lessons for healthier choices.</p></div>
+    <div class="learn-points-pill">+20 / reflection</div>
+  </header>
+  <section class="section">
+    <div class="card learn-intro-card"><span class="eyebrow">HOW IT WORKS</span><h2>Learn, reflect, grow.</h2><p>Complete a lesson and reflect to earn BreezyPoints.</p></div>
+  </section>
+  <section class="section">
+    <div class="section-header"><h2>Lessons</h2><span id="learnCompletionCount" class="member-count">0 of 4 completed</span></div>
+    <div id="learnResourceList" class="learn-resource-list"></div>
+  </section>
+  <section id="learnReaderSection" class="section hidden">
+    <div class="card learn-reader-card">
+      <div class="learn-reader-top"><div><span id="learnReaderType" class="eyebrow">ARTICLE</span><h2 id="learnReaderTitle">Lesson</h2></div><button id="closeLearnReader" class="small-button" type="button">Close</button></div>
+      <div id="learnReaderBody" class="learn-reader-body"></div>
+      <div class="learn-reflection-box"><label for="learnReflection"><strong>Your reflection</strong><span>What stood out, and how can you use it?</span></label><textarea id="learnReflection" rows="5" maxlength="800" placeholder="Write at least 40 characters..."></textarea><div class="learn-reflection-meta"><span id="learnReflectionCount">0 / 40 minimum</span><span>+20 BreezyPoints</span></div><button id="submitLearnReflection" class="primary-button" type="button">Complete lesson & submit reflection</button><p id="learnReflectionStatus" class="wellness-feedback" aria-live="polite"></p></div>
+    </div>
+  </section>
+</div>
+
+<!-- ========================================
+     PEERS PAGE
+========================================= -->
+
+<div id="peersPage" class="page">
+
+
+    <header class="page-header">
+    <p class="greeting">YOUR SUPPORT CIRCLE</p>
+    <h1>Better together</h1>
+    <p class="subtitle">A little encouragement can make the journey feel lighter. Grow, recover, and celebrate progress together.</p>
+    </header>
+    <div class="support-header-actions"><button type="button" class="ux31-notification-button support-notification-button" data-open-notifications aria-label="Open notifications" title="Notifications">
+        <span aria-hidden="true" class="ux35-bell">⌁</span>
+        <span class="ux31-notification-dot hidden" data-notification-dot></span>
+    </button><button type="button" class="top-circle-btn support-only-circle" onclick="openSupportCircle()" aria-label="Open your support circle" title="Support Circle">👥</button></div>
+
+
+    <section class="section">
+        <div class="support-hero-card">
+            <div class="support-hero-copy">
+                <p class="card-label">INSTANT HELP</p>
+                <h2>Take the next minute with support.</h2>
+                <p>Use a quick breathing break, delay the urge, or message Miguel without leaving this page.</p>
+            </div>
+
+            <div class="support-hero-actions">
+                <button class="support-chip" data-support-action="breathing">🫁 Breathe</button>
+                <button class="support-chip" data-support-action="delay">⏱ Delay</button>
+                <button class="support-chip" data-support-action="partner">💬 Miguel</button>
+            </div>
+
+            <div class="support-hero-note">
+                <span class="support-hero-dot"></span>
+                <span id="supportHeroState">Craving Support is on.</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CRAVING SOS -->
+
+    <section class="section">
+
+        <div class="sos-card">
+
+            <div class="sos-content">
+
+                <span class="sos-icon">
+                    🫶
+                </span>
+
+                <div>
+
+                    <h2>
+                        Having a craving?
+                    </h2>
+
+                    <p>
+                        You don't have to handle it alone.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="sosButton"
+                class="sos-button">
+
+                I Need Support
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACCOUNTABILITY PARTNER -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+                Accountability Partner
+            </h2>
+
+            <span class="online-status">
+                ● Online
+            </span>
+
+        </div>
+
+
+        <div class="accountability-card">
+
+            <div class="accountability-header">
+
+                <div class="large-avatar">
+                    M
+                </div>
+
+
+                <div class="accountability-info">
+
+                    <h3>
+                        Miguel
+                    </h3>
+
+                    <p>
+                        Your accountability partner
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="partner-stats">
+
+                <div>
+                    <strong>
+                        🔥 5
+                    </strong>
+
+                    <span>
+                        Day Streak
+                    </span>
+                </div>
+
+
+                <div>
+                    <strong>
+                        📉 21%
+                    </strong>
+
+                    <span>
+                        Weekly Reduction
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div
+                id="partnerMessage"
+                class="partner-message">
+
+                "Keep going! You're doing great! 💪"
+
+            </div>
+
+
+            <div class="encouragement-composer">
+                <label for="encouragementPreset">Choose an encouragement</label>
+                <select id="encouragementPreset">
+                    <option>Keep going! You're making progress one day at a time. 💚</option>
+                    <option>Proud of you for showing up today. You've got this! 🌱</option>
+                    <option>One craving at a time — I'm rooting for you! 🙌</option>
+                    <option>Your progress matters. Keep protecting the wins you've built. ⭐</option>
+                </select>
+            </div>
+            <button id="encouragePartner" class="secondary-button">💚 Send Encouragement</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUPPORT CIRCLE -->
+
+    
+
+
+    <!-- GROUP CHALLENGE -->
+
+    <section class="section">
+
+        <h2>
+            Group Challenge
+        </h2>
+
+
+        <div class="group-challenge-card">
+
+            <div class="challenge-top">
+
+                <span class="challenge-big-icon">
+                    🏆
+                </span>
+
+                <div>
+
+                    <p class="card-label">
+                        THIS WEEK
+                    </p>
+
+                    <h3>
+                        Reduce Together
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <p class="challenge-description">
+
+                Work together to reach a shared 20% reduction goal this week. Progress is cooperative — there are no rankings or leaderboards.
+
+            </p>
+
+
+            <div class="progress-label">
+
+                <span>
+                    Group Progress
+                </span>
+
+                <strong id="groupProgressPercent">74%</strong>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="groupProgressFill"
+                    class="progress-fill"
+                    style="width:74%">
+                </div>
+
+            </div>
+
+
+            <div class="challenge-members"><span>👥 4 participating</span><span>🤝 Cooperative goal</span></div>
+            <div class="cooperative-progress-list">
+                <div><span>You</span><strong>68%</strong></div>
+                <div><span>Miguel</span><strong>81%</strong></div>
+                <div><span>Sofia</span><strong>76%</strong></div>
+                <div><span>Carlo</span><strong>71%</strong></div>
+            </div>
+            <p class="cooperative-note">Individual progress is visible for encouragement only. Breezy does not rank members.</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACTIVITY -->
+
+    
+
+
+</div>
+
+
+<!-- ========================================
+     REWARDS PAGE
+========================================= -->
+
+<div id="rewardsPage" class="page">
+
+    <header class="page-header">
+
+        <p class="greeting">
+            Your achievements
+        </p>
+
+        <h1>
+            Rewards 🎁
+        </h1>
+
+        <p class="subtitle">
+            Celebrate every step of your progress.
+        </p>
+
+    </header>
+
+
+    <!-- POINTS CARD -->
+
+    <section class="rewards-hero">
+
+        <div>
+
+            <p class="card-label">
+                YOUR BALANCE
+            </p>
+
+            <h2>
+                ⭐ <span id="pointsBalance">1,250</span>
+            </h2>
+
+            <p>
+                BreezyPoints
+            </p>
+
+        </div>
+
+        <div
+            id="levelBadge"
+            class="level-badge">
+
+            LVL 4
+
+        </div>
+
+    </section>
+
+
+    <!-- LEVEL PROGRESS -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+                Your Level
+            </h2>
+
+            <span
+                id="levelLabel"
+                class="level-label">
+
+                Mindful Breather
+
+            </span>
+
+        </div>
+
+
+        <div class="level-card">
+
+            <div class="level-info">
+
+                <div>
+
+                    <p
+                        id="levelNumber"
+                        class="card-label">
+
+                        LEVEL 4
+
+                    </p>
+
+                    <h3 id="levelName">
+                        Mindful Breather
+                    </h3>
+
+                </div>
+
+
+                <strong id="levelProgressText">
+                    1,250 / 1,500 XP
+                </strong>
+
+            </div>
+
+
+            <div class="progress-bar level-progress-bar">
+
+                <div
+                    id="levelProgress"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+
+            <p class="next-level-text">
+
+                <span id="pointsUntilNext">
+                    250
+                </span>
+
+                points until Level 5
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EARN POINTS -->
+
+    <section class="section">
+
+        <h2>
+            How You Earn Points
+        </h2>
+
+
+        <div class="earn-grid">
+
+
+            <div class="earn-card">
+
+                <span>
+                    📝
+                </span>
+
+                <div>
+
+                    <strong>
+                        +5
+                    </strong>
+
+                    <p>
+                        Log honestly
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="earn-card">
+
+                <span>
+                    💚
+                </span>
+
+                <div>
+
+                    <strong>
+                        +10
+                    </strong>
+
+                    <p>
+                        Support a peer
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="earn-card">
+
+                <span>
+                    🎯
+                </span>
+
+                <div>
+
+                    <strong>
+                        +50
+                    </strong>
+
+                    <p>
+                        Daily challenge
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="earn-card">
+
+                <span>
+                    🔥
+                </span>
+
+                <div>
+
+                    <strong>
+                        +100
+                    </strong>
+
+                    <p>
+                        Build a streak
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+                Your Badges
+            </h2>
+
+            <span class="badge-count">
+                3 / 6 unlocked
+            </span>
+
+        </div>
+
+
+        <div class="badges-grid">
+
+
+            <div class="badge-card unlocked">
+
+                <div class="badge-icon">
+                    🌱
+                </div>
+
+                <h3>
+                    First Step
+                </h3>
+
+                <p>
+                    Logged your first session
+                </p>
+
+            </div>
+
+
+            <div class="badge-card unlocked">
+
+                <div class="badge-icon">
+                    🔥
+                </div>
+
+                <h3>
+                    On Fire
+                </h3>
+
+                <p>
+                    Reached a 3-day streak
+                </p>
+
+            </div>
+
+
+            <div class="badge-card unlocked">
+
+                <div class="badge-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Supportive Friend
+                </h3>
+
+                <p>
+                    Encouraged a peer
+                </p>
+
+            </div>
+
+
+            <div class="badge-card locked">
+
+                <div class="badge-icon">
+                    🏆
+                </div>
+
+                <h3>
+                    One Week Strong
+                </h3>
+
+                <p>
+                    Reach a 7-day streak
+                </p>
+
+            </div>
+
+
+            <div class="badge-card locked">
+
+                <div class="badge-icon">
+                    📉
+                </div>
+
+                <h3>
+                    Cutting Back
+                </h3>
+
+                <p>
+                    Reduce usage by 25%
+                </p>
+
+            </div>
+
+
+            <div class="badge-card locked">
+
+                <div class="badge-icon">
+                    ⭐
+                </div>
+
+                <h3>
+                    Champion
+                </h3>
+
+                <p>
+                    Complete 10 challenges
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    
+<section class="section achievement-section" id="achievementSection">
+    <div class="section-title-row">
+        <h2>Achievements 🏆</h2>
+    </div>
+    <div class="achievement-grid" id="achievementGrid"></div>
+</section>
+
+<!-- REWARD STORE -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+                Reward Store
+            </h2>
+
+            <span class="store-label">
+                Virtual Rewards
+            </span>
+
+        </div>
+
+
+        <div class="reward-list">
+
+
+            <div class="reward-card">
+
+                <div class="reward-icon">
+                    🎨
+                </div>
+
+
+                <div class="reward-info">
+
+                    <h3>
+                        Ocean Theme
+                    </h3>
+
+                    <p>
+                        Unlock a calming app theme.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="redeem-button"
+                    data-cost="300"
+                    data-reward="Ocean Theme">
+
+                    ⭐ 300
+
+                </button>
+
+            </div>
+
+
+
+            <div class="reward-card">
+
+                <div class="reward-icon">
+                    🏅
+                </div>
+
+
+                <div class="reward-info">
+
+                    <h3>
+                        Profile Badge
+                    </h3>
+
+                    <p>
+                        Show off an exclusive badge.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="redeem-button"
+                    data-cost="500"
+                    data-reward="Profile Badge">
+
+                    ⭐ 500
+
+                </button>
+
+            </div>
+
+
+
+            <div class="reward-card">
+
+                <div class="reward-icon">
+                    🌿
+                </div>
+
+
+                <div class="reward-info">
+
+                    <h3>
+                        Zen Avatar Frame
+                    </h3>
+
+                    <p>
+                        Unlock a special profile frame.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="redeem-button"
+                    data-cost="750"
+                    data-reward="Zen Avatar Frame">
+
+                    ⭐ 750
+
+                </button>
+
+            </div>
+
+
+
+            <div class="reward-card">
+
+                <div class="reward-icon">
+                    👑
+                </div>
+
+
+                <div class="reward-info">
+
+                    <h3>
+                        Champion Title
+                    </h3>
+
+                    <p>
+                        Display a premium profile title.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="redeem-button"
+                    data-cost="2000"
+                    data-reward="Champion Title">
+
+                    🔒 2,000
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FUTURE REAL WORLD REWARDS -->
+
+    <section class="section">
+
+    <div class="section-header">
+
+        <h2>
+            Real-World Rewards
+        </h2>
+
+        <span class="store-label">
+            PRO
+        </span>
+
+    </div>
+
+
+    <div
+        id="realWorldRewards">
+
+        <div class="reward-card">
+
+            <div class="reward-icon">
+                🏋️
+            </div>
+
+            <div class="reward-info">
+
+                <h3>
+                    Fitness Partner Pass
+                </h3>
+
+                <p>
+                    Redeem points for a free trial
+                    or partner fitness membership.
+                </p>
+
+            </div>
+
+            <button class="redeem-button">
+
+                Coming Soon
+
+            </button>
+
+        </div>
+
+
+        <div class="reward-card">
+
+            <div class="reward-icon">
+                🎟️
+            </div>
+
+            <div class="reward-info">
+
+                <h3>
+                    Partner Discount
+                </h3>
+
+                <p>
+                    Redeem exclusive discounts
+                    from participating wellness
+                    and fitness partners.
+                </p>
+
+            </div>
+
+            <button class="redeem-button">
+
+                Coming Soon
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="realRewardLock"
+        class="future-rewards-card">
+
+        <span class="future-icon">
+            🔒
+        </span>
+
+        <div>
+
+            <p class="card-label">
+                PRO FEATURE
+            </p>
+
+            <h3>
+                Unlock Real-World Rewards
+            </h3>
+
+            <p>
+                Breezy PRO members can redeem
+                points for eligible rewards from
+                participating fitness and wellness
+                partners.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+<!-- ========================================
+     PROFILE PAGE
+========================================= -->
+
+<div id="profilePage" class="page">
+
+    <header class="page-header">
+
+        <p class="greeting">
+            Your journey, your way
+        </p>
+
+        <h1>
+            Profile & Goals 👤
+        </h1>
+
+        <p class="subtitle">
+            Personalize your goals and support preferences.
+        </p>
+
+    </header>
+
+
+    <!-- PROFILE SUMMARY -->
+
+    <section class="profile-summary-card">
+
+        <div class="profile-large-avatar" id="profileAvatar">
+            A
+        </div>
+
+
+        <div class="profile-summary-info">
+
+            <h2 id="profileUserName">
+                Alex
+            </h2>
+
+            <p id="profileGoalSummary">
+                Reducing vaping by 25%
+            </p>
+
+        </div>
+
+
+        <div
+            id="profileLevel"
+            class="profile-level">
+
+            LVL 4
+
+        </div>
+
+    </section>
+
+
+    <!-- PRIMARY GOAL -->
+
+    <section class="section">
+
+        <h2>
+            My Goal
+        </h2>
+
+
+        <div class="settings-card">
+
+            <p class="settings-description">
+
+                Choose the approach that best fits
+                your current journey.
+
+            </p>
+
+
+            <div class="goal-options">
+
+
+                <label class="goal-option">
+
+                    <input
+                        type="radio"
+                        name="goalType"
+                        value="reduce"
+                        checked>
+
+                    <div>
+
+                        <strong>
+                            📉 Reduce Gradually
+                        </strong>
+
+                        <span>
+                            Slowly lower your vaping
+                            frequency over time.
+                        </span>
+
+                    </div>
+
+                </label>
+
+
+
+                <label class="goal-option">
+
+                    <input
+                        type="radio"
+                        name="goalType"
+                        value="quit">
+
+                    <div>
+
+                        <strong>
+                            🌱 Quit Completely
+                        </strong>
+
+                        <span>
+                            Work toward becoming
+                            completely vape-free.
+                        </span>
+
+                    </div>
+
+                </label>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CURRENT REDUCTION PLAN -->
+
+<section class="section">
+
+    <h2>
+        Your Reduction Plan
+    </h2>
+
+    <div class="settings-card">
+
+        <div class="setting-row">
+
+            <div>
+
+                <strong>
+                    Baseline Usage
+                </strong>
+
+                <p>
+                    Your estimated usage before
+                    starting your Breezy plan
+                </p>
+
+            </div>
+
+            <strong id="profileBaselinePuffs">
+                80 puffs/day
+            </strong>
+
+        </div>
+
+
+        <div class="setting-divider">
+        </div>
+
+
+        <div class="setting-row">
+
+            <div>
+
+                <strong>
+                    Daily Reduction Target
+                </strong>
+
+                <p>
+                    Your current recommended
+                    maximum
+                </p>
+
+            </div>
+
+            <strong id="profilePuffLimit">
+                72 puffs/day
+            </strong>
+
+        </div>
+
+
+        <div class="setting-divider">
+        </div>
+
+
+        <div class="setting-row">
+
+            <div>
+
+                <strong>
+                    Session Target
+                </strong>
+
+                <p>
+                    Recommended maximum sessions
+                    per day
+                </p>
+
+            </div>
+
+            <strong id="profileSessionLimit">
+                9 sessions/day
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- REDUCTION TARGET -->
+
+    <section
+        id="reductionGoalSection"
+        class="section">
+
+        <h2>
+            Reduction Target
+        </h2>
+
+
+        <div class="settings-card">
+
+
+            <div class="reduction-header">
+
+                <div>
+
+                    <strong>
+                        Overall Reduction Goal
+                    </strong>
+
+                    <p>
+                        Breezy will gradually work toward this target through your challenge stages.
+                    </p>
+
+                </div>
+
+
+                <strong
+                    id="reductionGoalValue"
+                    class="reduction-value">
+
+                    25%
+
+                </strong>
+
+            </div>
+
+
+            <input
+                id="reductionGoalSlider"
+                type="range"
+                min="5"
+                max="50"
+                step="5"
+                value="25">
+
+
+            <div class="slider-labels">
+
+                <span>
+                    5%
+                </span>
+
+                <span>
+                    50%
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ACCOUNTABILITY -->
+
+    <section class="section">
+
+        <h2>
+            Accountability & Support
+        </h2>
+
+
+        <div class="settings-card">
+
+
+            <div class="toggle-row">
+
+                <div>
+
+                    <strong>
+                        Peer Encouragement
+                    </strong>
+
+                    <p>
+                        Receive support from your
+                        accountability partner.
+                    </p>
+
+                </div>
+
+
+                <label class="switch">
+
+                    <input
+                        id="peerNotificationToggle"
+                        type="checkbox"
+                        checked>
+
+                    <span class="switch-slider">
+                    </span>
+
+                </label>
+
+            </div>
+
+
+
+            <div class="setting-divider">
+            </div>
+
+
+
+            <div class="toggle-row">
+
+                <div>
+
+                    <strong>
+                        Craving Support
+                    </strong>
+
+                    <p>
+                        Enable quick access to SOS
+                        craving tools.
+                    </p>
+
+                </div>
+
+
+                <label class="switch">
+
+                    <input
+                        id="cravingSupportToggle"
+                        type="checkbox"
+                        checked>
+
+                    <span class="switch-slider">
+                    </span>
+
+                </label>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- MEMBERSHIP -->
+
+<section class="section">
+
+    <h2>
+        Membership
+    </h2>
+
+
+    <div class="membership-card">
+
+        <div class="membership-icon">
+            ✨
+        </div>
+
+
+        <div class="membership-info">
+
+            <p class="card-label">
+                CURRENT PLAN
+            </p>
+
+            <h3 id="currentPlanText">
+                Breezy FREE
+            </h3>
+
+            <p>
+                Explore additional features
+                available with Breezy PRO.
+            </p>
+
+        </div>
+
+
+        <button
+            id="upgradeProButton"
+            class="upgrade-button">
+
+            View Breezy PRO
+
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- DEVICE INTEGRATION -->
+
+    <section class="section">
+
+        <h2>
+            Smart Device
+        </h2>
+
+
+        <div class="device-card">
+
+            <div class="device-icon">
+                📡
+            </div>
+
+
+            <div class="device-info">
+
+                <p class="card-label">
+                    FUTURE FEATURE
+                </p>
+
+                <h3>
+                    Connect Smart Vape Controller
+                </h3>
+
+                <p>
+                    Future versions could connect
+                    with a compatible Bluetooth device
+                    to automatically track usage or
+                    support timed access controls.
+                </p>
+
+            </div>
+
+
+            <button
+                id="connectDeviceButton"
+                class="device-button">
+
+                Connect
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SAVE -->
+
+    <section class="section">
+
+        <button
+            id="saveProfileButton"
+            class="primary-button">
+
+            Save Changes
+
+        </button>
+
+    </section>
+
+</div>
+
+<!-- ========================================
+     WELLNESS PAGE — HABITS & JOURNAL
+========================================= -->
+<div id="wellnessPage" class="page">
+  <header class="page-header wellness-header">
+    <div>
+      <span class="eyebrow">DAILY WELLNESS</span>
+      <h1>Wellness 🌿</h1>
+      <p>Small actions for a healthier day.</p>
+    </div>
+  </header>
+
+  <section class="section ux4-wellness-overview">
+    <button type="button" id="openHabitsSheet" class="card ux4-wellness-action">
+      <div class="ux4-action-icon">♡</div>
+      <div class="ux4-action-copy">
+        <span class="eyebrow">TODAY</span>
+        <h2>Healthy Habits</h2>
+        <p>Build healthier routines one small action at a time.</p>
+        <div class="ux4-mini-progress"><div id="ux4HabitProgressFill"></div></div>
+      </div>
+      <div class="ux4-action-meta">
+        <strong id="ux4HabitProgressText">0/6</strong><span>›</span>
+      </div>
+    </button>
+
+    <button type="button" id="openJournalSheet" class="card ux4-wellness-action">
+      <div class="ux4-action-icon">✎</div>
+      <div class="ux4-action-copy">
+        <span class="eyebrow">REFLECT</span>
+        <h2>Daily Journal</h2>
+        <p id="ux4JournalSummary">Capture today's wins and how you're feeling.</p>
+      </div>
+      <div class="ux4-action-meta"><span id="ux4JournalStatus" class="ux4-status-pill">Not yet</span><span>›</span></div>
+    </button>
+
+    <button type="button" class="card ux4-wellness-action go-to-learn">
+      <div class="ux4-action-icon">▤</div>
+      <div class="ux4-action-copy">
+        <span class="eyebrow">LEARN</span>
+        <h2>Learn & Reflect</h2>
+        <p>Short lessons and practical guidance for your reduction journey.</p>
+      </div>
+      <div class="ux4-action-meta"><span>›</span></div>
+    </button>
+
+    <button type="button" id="openJournalHistorySheet" class="ux4-history-link">
+      View journal history <span id="journalEntryCount">0 entries</span>
+    </button>
+  </section>
+
+  <!-- Existing functional Wellness controls are retained here and surfaced in bottom sheets. -->
+  <div id="ux4WellnessSources" class="ux4-source-hidden" aria-hidden="true">
+    <div id="ux4HabitsSource">
+      <div class="wellness-card-heading">
+        <div><span class="eyebrow">HEALTHY HABITS</span><h2>Today's habits</h2><p>Complete any habit that supports you today.</p></div>
+        <strong id="habitProgressText">0 of 6</strong>
+      </div>
+      <div class="wellness-progress-track"><div id="habitProgressFill" class="wellness-progress-fill"></div></div>
+      <div id="habitList" class="habit-list"></div>
+      <p id="habitRewardMessage" class="wellness-feedback" aria-live="polite"></p>
+    </div>
+
+    <div id="ux4JournalSource">
+      <form id="journalForm" class="journal-form">
+        <label>Small win today<textarea id="journalWins" rows="2" required maxlength="500" placeholder="What went well today?"></textarea></label>
+        <label>How did it make you feel?<textarea id="journalFeelings" rows="2" required maxlength="500" placeholder="How are you feeling about it?"></textarea></label>
+        <label>Looking forward to tomorrow<textarea id="journalTomorrow" rows="2" required maxlength="500" placeholder="One thing you want to work toward."></textarea></label>
+        <div class="ux4-journal-secondary">
+          <label>Mood <span class="optional-label">Optional</span><select id="journalMood"><option value="">Select a mood</option><option>Great</option><option>Good</option><option>Okay</option><option>Stressed</option><option>Difficult</option></select></label>
+          <label>Free write <span class="optional-label">Optional</span><textarea id="journalFreeWrite" rows="3" maxlength="1000" placeholder="Anything else on your mind?"></textarea></label>
+        </div>
+        <button type="submit" class="primary-button">Save today's journal</button>
+        <p id="journalStatus" class="wellness-feedback" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div id="ux4JournalHistorySource"><div id="journalHistory" class="journal-history"></div></div>
+  </div>
+</div>
+
+<!-- ========================================
+     NAVIGATION
+========================================= -->
+
+<nav class="bottom-nav" aria-label="Primary navigation">
+  <button class="nav-item active" data-page="homePage">
+    <span class="nav-icon">⌂</span><span>Home</span>
+  </button>
+  <button class="nav-item" data-page="progressPage">
+    <span class="nav-icon">▥</span><span>Progress</span>
+  </button>
+  <button class="nav-item nav-log-action" id="navLogButton" type="button" aria-label="Log vape session">
+    <span class="nav-log-circle">+</span><span>Log</span>
+  </button>
+  <button class="nav-item" data-page="wellnessPage">
+    <span class="nav-icon">♡</span><span>Wellness</span>
+  </button>
+  <button class="nav-item" data-page="peersPage">
+    <span class="nav-icon">♧</span><span>Support</span>
+  </button>
+</nav>
+
+
+
+
+<!-- ========================================
+     LOG SESSION MODAL
+========================================= -->
+
+<div
+    id="logModal"
+    class="modal hidden">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2>
+                Log Vape Session
+            </h2>
+
+            <button id="closeModal">
+                ✕
+            </button>
+
+        </div>
+
+
+        <label>
+            Number of puffs
+        </label>
+
+
+        <div class="counter">
+
+            <button id="decreasePuff">
+                −
+            </button>
+
+            <span id="puffInput">
+                5
+            </span>
+
+            <button id="increasePuff">
+                +
+            </button>
+
+        </div>
+
+
+        <label>
+            Craving intensity
+        </label>
+
+
+        <input
+            id="cravingInput"
+            type="range"
+            min="1"
+            max="5"
+            value="3">
+
+        <div class="log-scale-labels">
+            <span>Very low</span>
+            <span>Very high</span>
+        </div>
+
+        <p class="log-helper-text">
+            Craving level: <strong id="cravingValue">3</strong>/5
+        </p>
+
+
+        <label for="triggerInput">
+            What triggered you?
+        </label>
+
+
+        <select id="triggerInput">
+            <option value="Stress">Stress</option>
+            <option value="Boredom">Boredom</option>
+            <option value="Peer pressure / friends">Peer pressure / friends</option>
+            <option value="Social situation">Social situation</option>
+            <option value="Habit / routine">Habit / routine</option>
+            <option value="After meals">After meals</option>
+            <option value="Alcohol">Alcohol</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <div id="customTriggerWrap" class="log-custom-trigger hidden">
+            <label for="customTriggerInput" class="log-custom-trigger-label">
+                Specify your trigger
+            </label>
+            <input
+                id="customTriggerInput"
+                class="onboarding-input log-custom-trigger-input"
+                type="text"
+                maxlength="60"
+                placeholder="Tell us what triggered you">
+            <p class="log-helper-text">
+                This will be saved when you log the session.
+            </p>
+        </div>
+
+
+        <button
+            id="submitSession"
+            class="primary-button">
+
+            Log Session
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ========================================
+     CRAVING SUPPORT MODAL
+========================================= -->
+
+<div
+    id="sosModal"
+    class="modal hidden">
+
+    <div class="modal-content sos-modal-content">
+
+
+        <div class="modal-header">
+
+            <div>
+
+                <p class="card-label">
+                    CRAVING SUPPORT
+                </p>
+
+                <h2>
+                    You've got this, <span id="motivationUserName">Alex</span>.
+                </h2>
+
+            </div>
+
+
+            <button id="closeSosModal">
+                ✕
+            </button>
+
+        </div>
+
+
+        <p class="sos-message">
+
+            Cravings can feel intense, but they pass.
+            Let's take the next few minutes one step
+            at a time.
+
+        </p>
+
+
+        <div class="support-options">
+
+
+            <button
+                id="breathingButton"
+                class="support-option">
+
+                <span>
+                    🫁
+                </span>
+
+                <div>
+
+                    <strong>
+                        Take a breathing break
+                    </strong>
+
+                    <small>
+                        Try a short guided breathing exercise
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <button
+                id="delayButton"
+                class="support-option">
+
+                <span>
+                    ⏱
+                </span>
+
+                <div>
+
+                    <strong>
+                        Delay for 5 minutes
+                    </strong>
+
+                    <small>
+                        Wait before deciding whether to vape
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <button
+                id="messagePartnerButton"
+                class="support-option">
+
+                <span>
+                    💬
+                </span>
+
+                <div>
+
+                    <strong>
+                        Message Miguel
+                    </strong>
+
+                    <small>
+                        Ask your accountability partner
+                        for support
+                    </small>
+
+                </div>
+
+            </button>
+
+
+        </div>
+
+
+        <div
+            id="supportResult"
+            class="support-result hidden">
+        </div>
+
+
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- ========================================
+     PRO UPGRADE MODAL
+========================================= -->
+
+<div
+    id="proModal"
+    class="modal hidden">
+
+
+    <div class="modal-content pro-modal-content">
+
+
+        <div class="modal-header">
+
+            <div>
+
+                <p class="card-label">
+                    Breezy PRO
+                </p>
+
+                <h2>
+                    Unlock More ✨
+                </h2>
+
+            </div>
+
+
+            <button id="closeProModal">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div class="pro-modal-hero">
+
+            <span>
+                👑
+            </span>
+
+            <h2>
+                Breezy PRO
+            </h2>
+
+            <p>
+                More tools. More insights.
+                More support for your journey.
+            </p>
+
+        </div>
+
+
+        <div class="pro-feature-list">
+
+            <div>
+                📊 Weekly & monthly usage reports
+            </div>
+
+            <div>
+                🧠 AI-powered habit insights
+            </div>
+
+            <div>
+                🧢 Breezy Cap integration
+            </div>
+
+            <div>
+                ⭐ 2× BreezyPoints
+            </div>
+
+            <div>
+                🎯 Advanced challenges
+            </div>
+
+            <div>
+                🎁 Real-world partner rewards
+            </div>
+
+            <div>
+                🎨 Premium customization
+            </div>
+
+        </div>
+
+
+        <div class="pro-coming-soon">
+
+            <strong>
+                PRO comes with the Breezy Cap.
+            </strong>
+
+            <p>
+                No monthly subscription is required.
+                Purchasing and activating a compatible
+                Breezy Cap unlocks PRO features
+                for your account.
+            </p>
+
+        </div>
+
+
+        <button
+            id="proPreviewButton"
+            class="pro-button full-width">
+
+            Continue with PRO Preview
+
+        </button>
+
+
+        <button
+            id="continueFreeFromPro"
+            class="text-button">
+
+            Continue with Free
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<div id="riskPredictionModal" class="modal hidden">
+  <div class="modal-content risk-modal-content">
+    <div class="modal-header">
+      <div><p class="card-label">AI RISK PREDICTION</p><h2>High Craving Detected ⚠️</h2></div>
+      <button id="closeRiskModal">✕</button>
+    </div>
+    <div class="risk-alert-card">
+      <strong id="riskPredictionTitle">Take 2 minutes before vaping.</strong>
+      <p id="riskPredictionText">Your recent log matches a higher-risk pattern.</p>
+    </div>
+    <div class="risk-actions">
+      <button id="riskBreatheButton" class="primary-button">🫁 Breathe for 2 Minutes</button>
+      <button id="riskDelayButton" class="secondary-button">⏱ Delay 10 Minutes</button>
+      <button id="riskPartnerButton" class="secondary-button">🤝 Message Partner</button>
+    </div>
+    <p id="riskPartnerStatus" class="risk-status hidden"></p>
+  </div>
+</div>
+
+<!-- ========================================
+     DEVELOPER DEMO MODE
+========================================= -->
+
+<div id="bottomSheetBackdrop" class="ux35-sheet-backdrop hidden" aria-hidden="true"></div>
+<div id="bottomSheet" class="ux35-bottom-sheet hidden" role="dialog" aria-modal="true" aria-labelledby="bottomSheetTitle">
+    <div class="ux35-sheet-handle" aria-hidden="true"></div>
+    <div class="ux35-sheet-header">
+        <div><p id="bottomSheetEyebrow" class="card-label">QUICK VIEW</p><h2 id="bottomSheetTitle">Details</h2></div>
+        <button type="button" id="closeBottomSheet" class="ux35-sheet-close" aria-label="Close">✕</button>
+    </div>
+    <div id="bottomSheetBody" class="ux35-sheet-body"></div>
+</div>
+
+<div id="developerModal" class="modal hidden">
+    <div class="modal-content developer-modal-content">
+        <div class="modal-header">
+            <div>
+                <p class="card-label">HIDDEN DEVELOPER TOOLS</p>
+                <h2>Developer Demo Mode 🛠️</h2>
+            </div>
+            <button id="closeDeveloperModal">✕</button>
+        </div>
+
+        <div class="developer-status-card">
+            <div>
+                <strong id="demoModeStatus">Demo Mode Off</strong>
+                <p id="demoModeDescription">Your current app data is unchanged.</p>
+            </div>
+            <span id="demoModeBadge" class="developer-badge">OFF</span>
+        </div>
+
+        <p class="developer-explainer">
+            Generate a realistic 30-day college-student history for presentations.
+            Your current data is backed up first and can be restored at any time.
+        </p>
+
+        <div class="developer-actions">
+            <button id="generateDemoDataButton" class="primary-button">
+                Generate 30-Day Demo Data
+            </button>
+            <button id="restoreRealDataButton" class="secondary-button">
+                Exit Demo & Restore My Data
+            </button>
+        </div>
+
+        <div class="developer-data-notes">
+            <strong>Demo dataset includes:</strong>
+            <ul>
+                <li>Weekday school and after-class usage spikes</li>
+                <li>Weekend social and boredom patterns</li>
+                <li>Randomized cravings, puffs, and triggers</li>
+                <li>Gradual improvement across the month</li>
+                <li>Occasional difficult days for realistic variation</li>
+                <li>Current challenge stage, target, and streak</li>
+                <li>Healthy habits, journal, and Learn completion</li>
+            </ul>
+        </div>
+
+
+        <div class="developer-analytics-preview">
+            <strong>Analytics Engine Preview</strong>
+            <div class="developer-analytics-grid">
+                <div>
+                    <span>30-Day Avg.</span>
+                    <b id="demoAnalyticsAverage">—</b>
+                </div>
+                <div>
+                    <span>Reduction</span>
+                    <b id="demoAnalyticsReduction">—</b>
+                </div>
+                <div>
+                    <span>Top Trigger</span>
+                    <b id="demoAnalyticsTrigger">—</b>
+                </div>
+                <div>
+                    <span>Goal Adherence</span>
+                    <b id="demoAnalyticsAdherence">—</b>
+                </div>
+            </div>
+        </div>
+
+        <p class="developer-hint">
+            Hidden shortcut: tap the Breezy logo 5 times.
+        </p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

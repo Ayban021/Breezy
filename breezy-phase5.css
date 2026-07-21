@@ -1,0 +1,867 @@
+/* =========================================================
+   BREEZY — UX-5 SUPPORT HUB POLISH
+   Load AFTER all previous stylesheets.
+   ========================================================= */
+
+#peersPage {
+  position: relative;
+  isolation: isolate;
+}
+
+#peersPage .page-header {
+  margin-bottom: 18px;
+}
+
+#peersPage .page-header h1 {
+  letter-spacing: -1px;
+  line-height: 1.05;
+}
+
+#peersPage .support-hero-card {
+  border: 1px solid rgba(91, 157, 194, 0.16);
+  border-radius: 24px;
+  padding: 22px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(120, 191, 234, 0.18), transparent 30%),
+    radial-gradient(circle at 0% 100%, rgba(63, 167, 163, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 251, 254, 0.96));
+  box-shadow: 0 16px 34px rgba(48, 111, 151, 0.10);
+}
+
+#peersPage .support-hero-copy h2 {
+  color: var(--breezy-ink, #173044);
+  font-size: 22px;
+  line-height: 1.15;
+  margin: 6px 0 8px;
+  letter-spacing: -0.5px;
+}
+
+#peersPage .support-hero-copy p:last-child {
+  color: #5f7788;
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 34ch;
+}
+
+#peersPage .support-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+#peersPage .support-chip {
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(91, 157, 194, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #205b7a;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 8px 18px rgba(48, 111, 151, 0.06);
+}
+
+#peersPage .support-chip:hover:not(:disabled) {
+  background: #f2fbff;
+  transform: translateY(-1px);
+}
+
+#peersPage .support-chip:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#peersPage .support-hero-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(223, 243, 252, 0.82);
+  border: 1px solid rgba(120, 191, 234, 0.22);
+  color: #4b6a7c;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+#peersPage .support-hero-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #78bfea, #3fa7a3);
+  box-shadow: 0 0 0 5px rgba(120, 191, 234, 0.18);
+  flex: 0 0 auto;
+}
+
+#peersPage .sos-card {
+  border: 1px solid rgba(120, 191, 234, 0.18);
+  margin-bottom: 12px;
+}
+
+#peersPage .sos-content {
+  align-items: center;
+  gap: 14px;
+}
+
+#peersPage .sos-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  font-size: 22px;
+  flex: 0 0 auto;
+}
+
+#peersPage .sos-card h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+#peersPage .sos-card p {
+  font-size: 13px;
+  opacity: 0.92;
+}
+
+#peersPage .sos-button {
+  min-height: 48px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+#peersPage .accountability-card,
+#peersPage .circle-card,
+#peersPage .group-challenge-card,
+#peersPage .activity-card {
+  border: 1px solid rgba(91, 157, 194, 0.14);
+  box-shadow: 0 12px 28px rgba(48, 111, 151, 0.08);
+}
+
+#peersPage .section-header h2,
+#peersPage .section > h2 {
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+
+#peersPage .accountability-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+#peersPage .partner-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+#peersPage .partner-stats div {
+  padding: 12px;
+  border-radius: 14px;
+  background: #f7fcff;
+  border: 1px solid rgba(120, 191, 234, 0.16);
+}
+
+#peersPage .partner-message {
+  margin-bottom: 14px;
+  border-left-width: 4px;
+}
+
+#peersPage .encouragement-composer label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #526c7d;
+  margin-bottom: 8px;
+}
+
+#peersPage .encouragement-composer select {
+  width: 100%;
+  min-height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(91, 157, 194, 0.22);
+  background: #fff;
+  color: var(--breezy-ink, #173044);
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+
+#peersPage .support-options {
+  gap: 12px;
+}
+
+#peersPage .support-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 74px;
+  padding: 14px 15px;
+  border-radius: 16px;
+  border: 1px solid rgba(120, 191, 234, 0.20);
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(246,251,254,0.96));
+  box-shadow: 0 10px 22px rgba(48, 111, 151, 0.06);
+  text-align: left;
+}
+
+#peersPage .support-option span {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(223, 243, 252, 0.95);
+  flex: 0 0 auto;
+  font-size: 20px;
+}
+
+#peersPage .support-option strong {
+  display: block;
+  color: var(--breezy-ink, #173044);
+  margin-bottom: 3px;
+}
+
+#peersPage .support-option small {
+  color: #6e8292;
+  line-height: 1.35;
+}
+
+#peersPage .support-result {
+  margin-top: 16px;
+  border-radius: 16px;
+  padding: 16px 16px;
+  font-size: 14px;
+  line-height: 1.55;
+  box-shadow: 0 10px 22px rgba(48, 111, 151, 0.08);
+}
+
+#peersPage .member-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+#peersPage .circle-member {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: #f7fcff;
+  border: 1px solid rgba(120, 191, 234, 0.14);
+}
+
+#peersPage .mini-avatar,
+#peersPage .activity-avatar {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+}
+
+#peersPage .group-challenge-card {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(120, 191, 234, 0.10), transparent 30%),
+    #fff;
+}
+
+#peersPage .cooperative-progress-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+#peersPage .cooperative-progress-list > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f7fcff;
+  border: 1px solid rgba(120, 191, 234, 0.14);
+}
+
+#peersPage .activity-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#peersPage .activity-content {
+  flex: 1 1 auto;
+}
+
+#peersPage .cheer-button {
+  width: 42px;
+  height: 42px;
+  font-size: 17px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+#peersPage .cheer-button:hover:not(.cheered) {
+  background: #e8faf6;
+}
+
+#sosModal .modal-content.sos-modal-content {
+  width: min(92vw, 430px);
+  max-height: 88vh;
+  overflow: auto;
+  border-radius: 26px 26px 0 0;
+  border: 1px solid rgba(120, 191, 234, 0.22);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(120, 191, 234, 0.18), transparent 28%),
+    linear-gradient(180deg, #fbfeff, #f5fbfe);
+  box-shadow: 0 24px 58px rgba(31, 91, 128, 0.20);
+}
+
+#sosModal .modal-header h2 {
+  letter-spacing: -0.6px;
+}
+
+#sosModal .support-options {
+  margin-top: 8px;
+}
+
+#sosModal .support-result {
+  background: #edf9fc;
+  border-color: rgba(63, 167, 163, 0.22);
+  color: #1f6f6b;
+}
+
+@media (max-width: 420px) {
+  #peersPage .member-list,
+  #peersPage .partner-stats {
+    grid-template-columns: 1fr;
+  }
+
+  #peersPage .support-hero-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  #peersPage .sos-card,
+  #peersPage .accountability-card,
+  #peersPage .circle-card,
+  #peersPage .group-challenge-card,
+  #peersPage .activity-card {
+    padding: 16px;
+  }
+
+  #peersPage .support-option {
+    min-height: 68px;
+  }
+}
+
+
+/* ========================================
+   UX-5.2 — SMALLER REFINEMENTS
+========================================= */
+
+#peersPage .circle-card {
+  padding: 14px;
+  border-radius: 18px;
+}
+
+#peersPage .circle-title h3 {
+  font-size: 16px;
+  letter-spacing: -0.3px;
+}
+
+#peersPage .member-list {
+  gap: 8px;
+  margin-top: 12px;
+}
+
+#peersPage .circle-member {
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+
+#peersPage .mini-avatar {
+  width: 30px;
+  height: 30px;
+  font-size: 11px;
+}
+
+#peersPage .group-challenge-card {
+  border-radius: 18px;
+}
+
+#wellnessPage .page-header h1 {
+  letter-spacing: -1px;
+}
+
+#wellnessPage .page-header p,
+#wellnessPage .greeting,
+#wellnessPage .eyebrow {
+  letter-spacing: normal;
+}
+
+#wellnessPage .ux4-wellness-action {
+  border-radius: 24px;
+  padding: 18px 18px;
+  box-shadow: 0 12px 30px rgba(15, 118, 110, 0.08);
+  border: 1px solid rgba(15, 118, 110, 0.10);
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(247,252,251,0.96));
+}
+
+#wellnessPage .ux4-wellness-action h2 {
+  letter-spacing: -0.4px;
+  margin: 3px 0 6px;
+}
+
+#wellnessPage .ux4-wellness-action p {
+  line-height: 1.45;
+}
+
+#wellnessPage .ux4-action-icon {
+  border-radius: 16px;
+}
+
+#learnPage .page-header h1 {
+  letter-spacing: -1px;
+}
+
+#learnPage .learn-header {
+  align-items: flex-start;
+  gap: 14px;
+}
+
+#learnPage .learn-points-pill {
+  white-space: nowrap;
+}
+
+#learnPage .learn-intro-card,
+#learnPage .learn-reader-card {
+  border-radius: 20px;
+}
+
+#learnPage .learn-intro-card h2,
+#learnPage .learn-resource-copy h3,
+#learnPage .learn-reader-top h2 {
+  letter-spacing: -0.45px;
+}
+
+#learnPage .learn-intro-card p,
+#learnPage .learn-resource-copy p,
+#learnPage .learn-reader-body,
+#learnPage .learn-reflection-box label span {
+  line-height: 1.45;
+}
+
+#learnPage .learn-resource-card {
+  border-radius: 18px;
+}
+
+#learnPage .learn-reader-body {
+  font-size: 13px;
+}
+
+#learnPage .learn-reflection-box textarea {
+  border-radius: 12px;
+}
+
+#bottomSheet .ux31-notifications-activity {
+  margin-top: 18px;
+}
+
+#bottomSheet .ux31-notifications-activity .section-header {
+  margin-bottom: 10px;
+}
+
+#bottomSheet .ux31-notifications-activity .section-header h3 {
+  font-size: 16px;
+  letter-spacing: -0.3px;
+}
+
+#bottomSheet .ux31-notifications-activity-list {
+  gap: 10px;
+}
+
+#bottomSheet .ux31-notifications-activity-list .activity-card {
+  padding: 14px;
+}
+
+#bottomSheet .ux31-notifications-activity-list .activity-content p {
+  font-size: 12px;
+}
+
+#bottomSheet .ux31-notifications-activity-list .activity-content span {
+  font-size: 10px;
+}
+
+/* UX-5.3 */
+.top-circle-btn{min-height:42px;padding:7px 11px;border-radius:14px;border:1px solid rgba(15,118,110,.12);background:rgba(255,255,255,.92);color:#24453d;display:inline-flex;align-items:center;justify-content:center;gap:5px;font:inherit;font-size:12px;font-weight:750;cursor:pointer;box-shadow:0 6px 18px rgba(15,118,110,.07)}
+.top-circle-icon{font-size:16px}.activity-cheer-btn{border:1px solid rgba(15,118,110,.14);background:#fff;color:#315c51;border-radius:999px;padding:7px 9px;font:inherit;font-size:11px;font-weight:750;cursor:pointer;white-space:nowrap}.activity-cheer-btn.is-cheered{background:rgba(15,118,110,.10)}
+.support-circle-sheet-copy{margin:0 0 14px;color:#687a73;font-size:13px;line-height:1.5}.support-circle-sheet-list{display:grid;gap:10px}.support-circle-person{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:12px;border:1px solid rgba(15,118,110,.10);border-radius:16px;background:rgba(247,252,251,.88)}.support-circle-person>div:nth-child(2){display:flex;flex-direction:column;gap:2px}.support-circle-person strong{font-size:13px}.support-circle-person span{font-size:11px;color:#71827b}.circle-peer-action{border:0;background:transparent;color:#0f766e;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
+@media(max-width:420px){.top-circle-label,.activity-cheer-btn span{display:none}}
+
+
+/* ========================================
+   UX-6 — INTERACTION CONSISTENCY + POLISH
+========================================= */
+
+/* Circle is intentionally contextual: only Support exposes it. */
+.support-only-circle{
+  display:none !important;
+}
+.support-only-circle.is-visible{
+  display:inline-flex !important;
+}
+
+/* Consistent motion language */
+button,
+.nav-item,
+.learn-resource-card,
+.ux4-wellness-action,
+.support-action-card,
+.activity-card,
+.circle-peer-action{
+  transition:
+    transform .16s ease,
+    box-shadow .18s ease,
+    background-color .18s ease,
+    border-color .18s ease,
+    opacity .18s ease;
+}
+
+button:active,
+.nav-item:active,
+.learn-resource-card:active,
+.ux4-wellness-action:active,
+.support-action-card:active,
+.activity-card:active,
+.ux6-pressed{
+  transform:scale(.975);
+}
+
+/* Keyboard/focus consistency */
+button:focus-visible,
+.nav-item:focus-visible,
+.learn-resource-card:focus-visible,
+.ux4-wellness-action:focus-visible,
+.support-action-card:focus-visible,
+.circle-peer-action:focus-visible{
+  outline:3px solid rgba(15,118,110,.20);
+  outline-offset:2px;
+}
+
+/* Primary buttons should feel like the same family everywhere */
+.primary-btn,
+button.primary,
+.cta-button{
+  border-radius:14px;
+  font-weight:750;
+  letter-spacing:-.15px;
+}
+
+/* Secondary actions */
+.secondary-btn,
+.circle-peer-action,
+.activity-cheer-btn{
+  min-height:34px;
+}
+
+/* Tappable cards */
+.learn-resource-card,
+.ux4-wellness-action,
+.support-action-card{
+  cursor:pointer;
+}
+
+.learn-resource-card:hover,
+.ux4-wellness-action:hover,
+.support-action-card:hover{
+  box-shadow:0 12px 28px rgba(15,118,110,.09);
+}
+
+/* Notification/social feedback */
+.activity-cheer-btn{
+  transition:transform .15s ease, background-color .18s ease, border-color .18s ease;
+}
+.activity-cheer-btn.is-cheered{
+  font-weight:800;
+}
+
+/* Bottom sheet consistency */
+#bottomSheet .ux35-sheet-section{
+  animation:ux6SheetContentIn .22s ease both;
+}
+@keyframes ux6SheetContentIn{
+  from{opacity:0;transform:translateY(6px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* Reduce motion when requested */
+@media (prefers-reduced-motion: reduce){
+  button,
+  .nav-item,
+  .learn-resource-card,
+  .ux4-wellness-action,
+  .support-action-card,
+  .activity-card,
+  #bottomSheet .ux35-sheet-section{
+    animation:none !important;
+    transition:none !important;
+  }
+}
+
+/* Compact mobile interaction targets without crowding */
+@media(max-width:420px){
+  button:not(.nav-item){
+    touch-action:manipulation;
+  }
+  .support-only-circle.is-visible{
+    display:inline-flex !important;
+  }
+}
+
+
+/* ========================================
+   UX-7 — SUPPORT ENTRY REFINEMENT
+========================================= */
+#peersPage .page-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+}
+#peersPage .support-header-actions{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex:0 0 auto;
+  margin-top:2px;
+}
+#peersPage .support-header-actions .top-circle-btn{
+  display:inline-flex !important;
+  min-width:44px;
+  min-height:44px;
+  padding:10px;
+  border-radius:16px;
+  font-size:18px;
+  line-height:1;
+}
+#peersPage .support-header-actions .top-circle-icon,
+#peersPage .support-header-actions .top-circle-label{
+  display:none;
+}
+#peersPage .support-hero-card{
+  border-radius:24px;
+  padding:18px;
+}
+#peersPage .sos-card,
+#peersPage .accountability-card{
+  border-radius:22px;
+}
+#peersPage .support-chip{
+  border-radius:16px;
+}
+#peersPage .section-header h2,
+#peersPage .page-header h1{
+  letter-spacing:-.04em;
+}
+@media (max-width: 520px){
+  #peersPage .page-header{
+    align-items:flex-start;
+  }
+  #peersPage .support-header-actions .top-circle-btn{
+    min-width:42px;
+    min-height:42px;
+    padding:9px;
+  }
+}
+
+
+/* ========================================
+   UX-7.1 — SUPPORT HEADER ALIGNMENT FIX
+========================================= */
+
+/* Restore the normal Breezy page-header flow. The Circle action is positioned
+   independently so it doesn't split the eyebrow/title/subtitle into columns. */
+#peersPage .page-header{
+  position:relative;
+  display:block;
+  padding-right:58px;
+}
+
+#peersPage .page-header .greeting{
+  margin-bottom:6px;
+}
+
+#peersPage .page-header h1{
+  margin-top:0;
+  margin-bottom:8px;
+  line-height:1.08;
+}
+
+#peersPage .page-header .subtitle{
+  max-width:420px;
+  margin:0;
+  line-height:1.5;
+}
+
+/* Keep the emoji Circle control aligned with the top-right of the header. */
+#peersPage .support-header-actions{
+  position:absolute;
+  top:0;
+  right:0;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#peersPage .support-header-actions .top-circle-btn{
+  min-width:44px;
+  width:44px;
+  min-height:44px;
+  height:44px;
+  padding:0;
+  border-radius:16px;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+}
+
+@media (max-width:520px){
+  #peersPage .page-header{
+    padding-right:54px;
+  }
+
+  #peersPage .page-header .subtitle{
+    max-width:none;
+  }
+
+  #peersPage .support-header-actions .top-circle-btn{
+    min-width:42px;
+    width:42px;
+    min-height:42px;
+    height:42px;
+  }
+}
+
+
+/* ========================================
+   UX-7.2 — SUPPORT HEADER ACTIONS FIX
+========================================= */
+#peersPage .page-header{
+  padding-right:108px;
+}
+
+#peersPage .support-header-actions{
+  gap:8px;
+  width:auto;
+}
+
+#peersPage .support-header-actions .support-notification-button,
+#peersPage .support-header-actions .top-circle-btn{
+  position:relative;
+  flex:0 0 44px;
+  width:44px;
+  height:44px;
+  min-width:44px;
+  min-height:44px;
+  margin:0;
+}
+
+#peersPage .support-header-actions .support-notification-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:16px;
+}
+
+@media(max-width:520px){
+  #peersPage .page-header{
+    padding-right:102px;
+  }
+
+  #peersPage .support-header-actions .support-notification-button,
+  #peersPage .support-header-actions .top-circle-btn{
+    flex-basis:42px;
+    width:42px;
+    height:42px;
+    min-width:42px;
+    min-height:42px;
+  }
+}
+
+
+/* ========================================
+   FREE PLAN — ADVANCED COACHING PREVIEW
+========================================= */
+.free-coaching-preview{
+  position:relative !important;
+  overflow:hidden;
+  cursor:default !important;
+  user-select:none;
+  min-height:180px;
+}
+.free-coaching-preview > *:not(.free-coaching-lock){
+  filter:blur(4px);
+  opacity:.62;
+  pointer-events:none !important;
+}
+.free-coaching-preview::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.36));
+  pointer-events:none;
+}
+.free-coaching-lock{
+  position:absolute;
+  z-index:3;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  gap:6px;
+  padding:22px;
+  pointer-events:none;
+}
+.free-coaching-lock-pill{
+  padding:5px 9px;
+  border-radius:999px;
+  background:rgba(255,255,255,.92);
+  border:1px solid rgba(15,118,110,.13);
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:.08em;
+}
+.free-coaching-lock strong{
+  font-size:16px;
+  letter-spacing:-.35px;
+  color:#24352f;
+}
+.free-coaching-lock span{
+  max-width:250px;
+  color:#687a73;
+  font-size:12px;
+  line-height:1.45;
+}
+
+
+/* Locked Advanced Coaching is a tappable PRO teaser */
+.free-coaching-preview{
+  cursor:pointer !important;
+}
+.free-coaching-preview .free-coaching-lock{
+  pointer-events:none;
+}
+.free-coaching-preview:active{
+  transform:scale(.985);
+}
