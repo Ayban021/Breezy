@@ -1,0 +1,496 @@
+
+/* =========================================================
+   BREEZY — HEADER LOGO FIX
+   Uses the complete supplied Breezy logo without cropping
+   ========================================================= */
+
+#homePage .breezy-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: auto;
+    height: auto;
+
+    margin: 0 0 18px 0;
+
+    overflow: visible;
+}
+
+
+/* Container for the complete Breezy logo */
+#homePage .breezy-brand-image {
+    width: 170px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow: visible;
+
+    margin-bottom: 17px;
+}
+
+
+/* Exact uploaded logo */
+#homePage .breezy-brand-image img,
+#homePage .breezy-header-logo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: left center;
+
+    /* Remove previous cropping */
+    transform: none;
+
+    /* Prevent unwanted image clipping */
+    max-width: 100%;
+
+    /* Your supplied PNG has a black/transparent-looking
+       background treatment, so retain the existing blending
+       behavior if needed on the light Breezy background. */
+    mix-blend-mode: multiply;
+}
+
+/* More cohesive section spacing on Rewards/Profile */
+#rewardsPage,
+#profilePage{
+  position:relative;
+  isolation:isolate;
+}
+#rewardsPage::before,
+#rewardsPage::after,
+#profilePage::before,
+#profilePage::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  z-index:-1;
+  border:2px solid rgba(120,191,234,.11);
+  border-left-color:transparent;
+  border-bottom-color:transparent;
+  border-radius:50%;
+  transform:rotate(14deg);
+}
+#rewardsPage::before,
+#profilePage::before{
+  width:350px;height:130px;
+  right:-255px;top:55px;
+}
+#rewardsPage::after,
+#profilePage::after{
+  width:390px;height:145px;
+  left:-300px;top:700px;
+  border-color:rgba(63,167,163,.09);
+  border-left-color:transparent;
+  border-bottom-color:transparent;
+}
+
+/* Rewards page */
+#rewardsPage .page-header .greeting,
+#profilePage .page-header .greeting{
+  color:var(--breezy-blue-deep,#398EC5);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+#rewardsPage .page-header h1,
+#profilePage .page-header h1{
+  margin:5px 0 6px;
+  color:var(--breezy-ink,#173044);
+  font-size:26px;
+  letter-spacing:-1px;
+}
+#rewardsPage .page-header .subtitle,
+#profilePage .page-header .subtitle{
+  color:var(--breezy-muted,#6E8292);
+  font-size:12px;
+  line-height:1.55;
+}
+
+#rewardsPage .rewards-hero{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px;
+  border-radius:22px;
+  border:1px solid rgba(120,191,234,.20);
+  background:
+    radial-gradient(circle at 92% 12%,rgba(255,255,255,.18),transparent 25%),
+    linear-gradient(135deg,#69b7e6 0%,#5eaed8 44%,#43a8a3 100%);
+  box-shadow:0 18px 38px rgba(55,143,190,.18);
+}
+#rewardsPage .rewards-hero::after{
+  content:"";
+  position:absolute;
+  width:220px;height:70px;
+  right:-70px;bottom:16px;
+  border:2px solid rgba(255,255,255,.22);
+  border-left-color:transparent;
+  border-bottom-color:transparent;
+  border-radius:50%;
+  transform:rotate(-8deg);
+}
+#rewardsPage .rewards-hero .card-label{
+  opacity:.88;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:1.4px;
+}
+#rewardsPage .rewards-hero h2{
+  font-size:30px;
+  letter-spacing:-1px;
+  margin:10px 0 3px;
+}
+#rewardsPage .rewards-hero p:last-child{
+  font-size:12px;
+  opacity:.88;
+}
+
+#rewardsPage .level-badge{
+  background:rgba(255,255,255,.18);
+  border:2px solid rgba(255,255,255,.55);
+  box-shadow:none;
+}
+
+#rewardsPage .level-card,
+#rewardsPage .earn-card,
+#rewardsPage .badge-card,
+#rewardsPage .reward-card,
+#rewardsPage .future-rewards-card,
+#profilePage .settings-card,
+#profilePage .membership-card,
+#profilePage .device-card,
+#profilePage .profile-summary-card{
+  border:1px solid rgba(91,157,194,.14);
+  background:rgba(255,255,255,.86);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  box-shadow:0 12px 28px rgba(48,111,151,.08);
+}
+
+#rewardsPage .level-card{
+  border-radius:20px;
+}
+#rewardsPage .level-info h3,
+#rewardsPage .earn-card strong,
+#rewardsPage .reward-info h3,
+#rewardsPage .badge-card h3{
+  color:var(--breezy-ink,#173044);
+}
+#rewardsPage .level-label,
+#rewardsPage .badge-count,
+#rewardsPage .store-label,
+#rewardsPage .next-level-text,
+#rewardsPage .reward-info p,
+#rewardsPage .badge-card p{
+  color:#6b8291;
+}
+#rewardsPage .level-progress-bar,
+#rewardsPage .progress-bar{
+  background:#e7f2f7;
+}
+#rewardsPage .progress-fill{
+  background:linear-gradient(90deg,#78bfea,#3fa7a3);
+}
+#rewardsPage .earn-card{
+  border-radius:16px;
+}
+#rewardsPage .earn-card > span,
+#rewardsPage .reward-icon,
+#rewardsPage .badge-icon{
+  filter:saturate(1.05);
+}
+#rewardsPage .badge-card.unlocked{
+  border-color:rgba(63,167,163,.22);
+}
+#rewardsPage .badge-card.locked{
+  opacity:.48;
+}
+#rewardsPage .reward-card{
+  border-radius:16px;
+}
+#rewardsPage .redeem-button{
+  background:#f6fcff;
+  color:#398ec5;
+  border:1px solid rgba(120,191,234,.30);
+}
+#rewardsPage .redeem-button:disabled{
+  background:#f1f5f9;
+  color:#94a3b8;
+}
+#rewardsPage .future-rewards-card{
+  border-radius:18px;
+  border-style:solid;
+}
+#rewardsPage .future-icon{
+  background:#e1f4fc;
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  font-size:18px;
+}
+#rewardsPage .pro-button{
+  background:linear-gradient(110deg,#398ec5,#55acd8);
+}
+
+/* Profile page */
+#profilePage .profile-summary-card{
+  border-radius:22px;
+  padding:20px;
+  background:
+    radial-gradient(circle at 95% 12%,rgba(255,255,255,.18),transparent 24%),
+    linear-gradient(135deg,#69b7e6 0%,#5eaed8 44%,#43a8a3 100%);
+}
+#profilePage .profile-large-avatar,
+#profilePage .profile-level{
+  background:rgba(255,255,255,.18);
+  border:2px solid rgba(255,255,255,.5);
+}
+#profilePage .profile-summary-info h2,
+#profilePage .profile-summary-info p,
+#profilePage .profile-level{
+  color:white;
+}
+#profilePage .settings-card{
+  border-radius:20px;
+}
+#profilePage .goal-option{
+  border-radius:14px;
+}
+#profilePage .goal-option:has(input:checked){
+  border-color:#5eb9d8;
+  background:#eefaff;
+}
+#profilePage .switch input:checked + .switch-slider{
+  background:#398ec5;
+}
+#profilePage .membership-card{
+  border-radius:18px;
+  background:linear-gradient(135deg,#f7fcff,#f3fbfa);
+}
+#profilePage .upgrade-button{
+  background:linear-gradient(110deg,#398ec5,#55acd8);
+}
+#profilePage .device-card{
+  border-radius:18px;
+  background:linear-gradient(135deg,#f7fcff,#f3fbfa);
+}
+
+/* Final peers corrections — target the real visible cards */
+#peersPage .sos-card{
+  border:1px solid rgba(120,191,234,.20);
+  background:
+    radial-gradient(circle at 92% 14%,rgba(255,255,255,.18),transparent 24%),
+    linear-gradient(135deg,#69b7e6 0%,#78c7e9 48%,#43a8a3 100%);
+  box-shadow:0 18px 38px rgba(55,143,190,.18);
+}
+#peersPage .sos-content h2,
+#peersPage .sos-content p{
+  color:white;
+}
+#peersPage .sos-icon{
+  width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:rgba(255,255,255,.18);
+}
+#peersPage .sos-button{
+  background:white;
+  color:#398ec5;
+  box-shadow:0 10px 20px rgba(48,111,151,.12);
+}
+
+#peersPage .accountability-card,
+#peersPage .circle-card,
+#peersPage .group-challenge-card,
+#peersPage .activity-card{
+  border:1px solid rgba(91,157,194,.14);
+  background:rgba(255,255,255,.86);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  box-shadow:0 12px 28px rgba(48,111,151,.08);
+  border-radius:20px;
+}
+#peersPage .partner-stats div{
+  background:#f4f9fc;
+  border-radius:12px;
+}
+#peersPage .partner-message{
+  border-left-color:#3fa7a3;
+  background:#f7fcff;
+}
+#peersPage .large-avatar,
+#peersPage .mini-avatar,
+#peersPage .activity-avatar{
+  background:linear-gradient(145deg,#78bfea,#3fa7a3);
+  border:2px solid rgba(255,255,255,.9);
+}
+#peersPage .group-icon,
+#peersPage .challenge-big-icon{
+  width:40px;height:40px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:#e1f4fc;
+}
+#peersPage .challenge-members,
+#peersPage .member-count,
+#peersPage .online-status{
+  color:#4f8d8c;
+}
+#peersPage .cheer-button{
+  background:#f6fcff;
+  color:#398ec5;
+  border:1px solid rgba(120,191,234,.25);
+}
+#peersPage .cheer-button.cheered{
+  background:#e5f6f4;
+  color:#2c8c86;
+}
+
+
+#peersPage .group-icon,
+#peersPage .challenge-big-icon{
+  font-size:0;
+  background:#e1f4fc center/22px 22px no-repeat;
+}
+#peersPage .group-icon{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2523398ec5%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%229%22%20cy%3D%228%22%20r%3D%223%22/%3E%3Cpath%20d%3D%22M2.5%2020.5a6.5%206.5%200%200%201%2013%200%22/%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%229%22%20r%3D%222.5%22/%3E%3Cpath%20d%3D%22M14.5%2020.5a4.8%204.8%200%200%201%207%200%22/%3E%3C/svg%3E");
+}
+#peersPage .challenge-big-icon{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2523398ec5%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%229%22%20cy%3D%228%22%20r%3D%223%22/%3E%3Cpath%20d%3D%22M2.5%2020.5a6.5%206.5%200%200%201%2013%200%22/%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%229%22%20r%3D%222.5%22/%3E%3Cpath%20d%3D%22M14.5%2020.5a4.8%204.8%200%200%201%207%200%22/%3E%3C/svg%3E");
+}
+
+/* Bottom nav final polish */
+.bottom-nav{
+  background:rgba(255,255,255,.90);
+}
+.bottom-nav .nav-item.active{
+  color:#398ec5;
+}
+
+/* Optional text helpers if you later add them */
+.breezy-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:5px 9px;
+  border-radius:999px;
+  background:#eaf6fc;
+  color:#3e83aa;
+  font-size:9px;
+  font-weight:700;
+}
+
+
+/* ========================================
+   PHASE 5.1 PROFILE SAVE BUTTON COLOR FIX
+======================================== */
+
+#profilePage #saveProfileButton {
+    background: linear-gradient(110deg, #398ec5, #55acd8);
+    color: white;
+    box-shadow: 0 8px 18px rgba(57, 142, 197, 0.18);
+}
+
+#profilePage #saveProfileButton:hover {
+    background: linear-gradient(110deg, #2f7fb0, #4fa4d4);
+}
+
+
+/* ========================================
+   PHASE 5.1 BRAND COLOR CONSISTENCY
+======================================== */
+
+/* Home — Log Vape Session */
+#homePage #logButton {
+    background: linear-gradient(110deg, #398ec5, #55acd8);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(57, 142, 197, 0.18);
+}
+#homePage #logButton:hover {
+    background: linear-gradient(110deg, #2f7fb0, #4fa4d4);
+}
+
+/* Profile — View Breezy PRO */
+#profilePage #upgradeProButton {
+    background: linear-gradient(110deg, #398ec5, #55acd8);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(57, 142, 197, 0.16);
+}
+#profilePage #upgradeProButton:hover {
+    background: linear-gradient(110deg, #2f7fb0, #4fa4d4);
+}
+
+/* Craving Support modal */
+#sosModal .modal-content {
+    border-top: 1px solid rgba(120, 191, 234, .24);
+    background: linear-gradient(180deg, #fbfeff 0%, #f4fbfe 100%);
+}
+#sosModal .card-label {
+    color: #398ec5;
+    opacity: 1;
+    font-weight: 800;
+}
+#sosModal .support-option {
+    background: #f7fcff;
+    border-color: rgba(120, 191, 234, .22);
+}
+#sosModal .support-option:hover {
+    background: #eaf6fc;
+    border-color: rgba(57, 142, 197, .35);
+}
+#sosModal .support-result {
+    background: #edf9fc;
+    border-color: rgba(63, 167, 163, .24);
+    color: #1f6f6b;
+}
+
+/* Log Vape Session modal */
+#logModal .modal-content {
+    border-top: 1px solid rgba(120, 191, 234, .24);
+    background: linear-gradient(180deg, #fbfeff 0%, #f4fbfe 100%);
+}
+#logModal .modal-header h2 {
+    color: #173044;
+}
+#logModal .primary-button,
+#logModal #submitSession {
+    background: linear-gradient(110deg, #398ec5, #55acd8);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(57, 142, 197, .16);
+}
+
+/* Hidden Developer Tools modal */
+#developerModal .modal-content {
+    border-top: 1px solid rgba(120, 191, 234, .24);
+    background: linear-gradient(180deg, #fbfeff 0%, #f4fbfe 100%);
+}
+#developerModal .card-label {
+    color: #398ec5;
+    opacity: 1;
+    font-weight: 800;
+}
+#developerModal .developer-status-card,
+#developerModal .developer-analytics-grid > div {
+    background: rgba(255,255,255,.84);
+    border-color: rgba(91,157,194,.16);
+}
+#developerModal .developer-data-notes {
+    background: #edf9fc;
+    border-color: rgba(120,191,234,.28);
+}
+#developerModal .developer-data-notes strong {
+    color: #337fae;
+}
+#developerModal #generateDemoDataButton {
+    background: linear-gradient(110deg, #398ec5, #55acd8);
+    color: #fff;
+}
